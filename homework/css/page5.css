@@ -1,0 +1,474 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Poppins:500,600";
+
+body, h1, h2, h3, p, ul, li, div, dl, dt, dd{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+/*float 해결*/
+.header::after, .content1::after, .content2::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/*폰트 설정*/
+.content1-heading, .content2-heading,
+.feature-heading, .portfolio-heading,
+.crew-heading, .contact-heading{
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #333;
+}
+p{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
+.wrapper{
+  margin: 0 auto;
+  width: 1440px;
+  font-family: 'Poppins';
+  position: relative;
+  box-sizing: border-box;
+}
+.hidden{
+  position: absolute;
+  left : -10000px;
+}
+.header{
+  padding: 0 150px;
+  padding-top: 80px;
+}
+.login-signup{
+  position: absolute;
+  top: 80px;
+  right: 150px;
+}
+.login-signup li{
+  display: inline-block;
+  font-size: 14px;
+}
+.login-link a, .signup-link a{
+  display: block;
+}
+.login-link a{
+  color: rgba(51, 51, 51, 0.9);
+  margin-right: 20px;
+}
+.signup-link a{
+  width: 125px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #03a67b;
+  border: solid 1px #03a67b;
+  background: #fff;
+  color: #03a67b;
+  box-sizing: border-box;
+  line-height: 38px;
+  text-align: center;
+}
+
+/*로고*/
+.logo{
+  box-sizing: inherit;
+  font-size: 1.5em;
+  float: left;
+}
+/*메인메뉴*/
+.main-menu{
+  margin-left: 100px;
+  font-size: 14px;
+}
+.main-menu li{
+  padding-top: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.main-menu li a{
+  color: rgba(51, 51, 51, 0.9);
+}
+
+/*intro*/
+.intro{
+  padding-top: 140px;
+  position: relative;
+  height: 700px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+.intro-heading{
+  font-size: 52px;
+  line-height: 58px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+.intro-p{
+  width: 800px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.6);
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.bubble1, .bubble2{
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  width: 345px;
+  background: #03a67b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.bubble1{
+  padding: 20px 25px 20px 25px;
+  height: 80px;
+  left: 290px;
+  top: 377px;
+}
+.bubble2{
+  padding: 20px 20px 15px 20px;
+  height: 100px;
+  right: 280px;
+  top: 500px;
+}
+.intro img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+/*content 공통*/
+.content1, .content2{
+  padding: 100px 150px;
+}
+.content1-p, .content2-p{
+  width: 440px;
+  color: rgba(51, 51, 51, 0.6);
+}
+.content-image-frame{
+  width: 560px;
+  height: 400px;
+  background: #e8e8e8;
+  position: relative;
+}
+.content-image-frame img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -29px;
+}
+
+/*content1*/
+.content1-heading{
+  margin-top: 130px;
+  position: relative;
+}
+.content1-heading::before{
+  content: "01";
+  font-size: 180px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.08);
+  position: absolute;
+  top: 22px;
+  left: -8px;
+}
+.content1-text{
+  float: right;
+}
+.content1 .content-image-frame{
+  float: left
+}
+
+/*content2*/
+.content2-heading{
+  margin-top: 130px;
+  position: relative;
+}
+.content2-heading::before{
+  content: "02";
+  font-size: 180px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.08);
+  position: absolute;
+  top: 22px;
+  left: -8px;
+}
+.content2-text{
+  float: left;
+}
+.content2 .content-image-frame{
+  float: right;
+}
+
+/*feature*/
+.feature{
+  padding: 100px 150px;
+  background: #f5f5f5;
+}
+.feature-p{
+  width: 700px;
+  margin-bottom: 18px;
+}
+.feature h3{
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3.5px;
+  color: #333;
+}
+.feature p{
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 20px;
+}
+.section section{
+  width: 545px;
+  height: 160px;
+  padding-left: 170px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  background: url(images/circle_check.png) no-repeat -15px 50%;
+  display: inline-block;
+}
+.section section:nth-child(2n){
+  margin-left: 40px;
+}
+
+/*portfolio*/
+.portfolio{
+  padding: 100px 0;
+  position: relative;
+}
+.portfolio-heading{
+  text-align: center;
+}
+.portfolio-p{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.5);
+}
+.portfolio-column{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.portfolio-column1, .portfolio-column2, .portfolio-column3{
+  width: 340px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
+}
+.portfolio-column2, .portfolio-column3{
+  margin-left: 45px;
+}
+.portfolio-image-frame{
+  position: relative;
+  height: 190px;
+  background: #e8e8e8;
+}
+.portfolio-image-frame img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -29px;
+}
+.portfolio-column h3{
+  font-size: 14px;
+  letter-spacing: 3.5px;
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+}
+.portfolio-column span{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.25);
+  display: block;
+  text-align: center;
+}
+.portfolio-column p{
+  width: 220px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.5);
+  margin: 0 auto;
+}
+.prev-btn, .next-btn{
+  width: 20px;
+  height: 40px;
+  text-indent: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  padding: 0;
+  top: 425px;
+}
+.prev-btn{
+  background: url(images/ArrowLeft_big.png);
+  left: 100px;
+}
+.next-btn{
+  background: url(images/ArrowRight_big.png);
+  right: 100px;
+}
+
+/*crew*/
+.crew{
+  padding: 100px 150px 90px 150px;
+  background: #f5f5f5;
+}
+.crew-heading{
+  text-align: center;
+}
+.crew-column{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.crew-column1, .crew-column2, .crew-column3, .crew-column4{
+  width: 270px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
+}
+.crew-column img{
+  display: block;
+  margin: 0 auto;
+}
+.crew-column h3{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+}
+.crew-column p{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.4);
+}
+.sns-menu{
+  width: 80px;
+  margin: 0 auto;
+}
+.sns-menu li{
+  display: inline-block;
+}
+.sns-menu li a{
+  overflow: hidden;
+  display: block;
+  line-height: 1;
+}
+.slack-link{
+  width: 16px;
+  height: 16px;
+  text-indent: 30px;
+  background: url(images/slack.png);
+}
+.twitter-link{
+  width: 16px;
+  height: 13px;
+  text-indent: 30px;
+  margin-left: 13px;
+  margin-right: 15px;
+  background: url(images/twitter.png);
+}
+.facebook-link{
+  width: 8px;
+  height: 16px;
+  text-indent: 30px;
+  background: url(images/Facebook.png) no-repeat;
+}
+/*contact-heading*/
+.contact{
+  padding: 100px 0;
+}
+.contact-heading{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.contact-p{
+  width: 288px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.6);
+  margin: 0 auto;
+}
+.sns-menu-green{
+  width: 160px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.sns-menu-green li{
+  display: inline-block;
+}
+.sns-menu-green li a{
+  overflow: hidden;
+  display: block;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  text-indent: 50px;
+}
+.slack-link-green{
+  background: url(images/sl.png);
+}
+.twitter-link-green{
+  background: url(images/tw.png);
+  margin: 0 14px;
+}
+.facebook-link-green{
+  background: url(images/fb.png);
+}
+
+.footer{
+  padding: 80px 150px 90px 150px;
+  display: flex;
+}
+.logo-footer{
+  line-height: 1;
+}
+.logo-p{
+  width: 220px;
+  color: rgba(51, 51, 51, 0.7);
+  margin-top: 20px;
+}
+.logo-p-column{
+  margin-right: 80px;
+}
+.footer h2{
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3.5px;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.footer li a{
+  font-size: 16px;
+  line-height: 36px;
+  color: rgba(51, 51, 51, 0.7);
+}
+.first-col{
+  margin-right: 180px;
+}
+.second-col{
+  margin-right: 170px;
+}

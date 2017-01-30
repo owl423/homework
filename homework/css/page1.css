@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Poppins:500,600";
+
+
+body, h1, h2, h3, p, ul, li, div{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+/*float 해결*/
+.header::after, .intro::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*폰트 셋팅*/
+.feature-heading, .video-content-heading, .try-heading, .client-heading{
+  font-family: 'Poppins';
+  font-weight: 600;
+  letter-spacing: -1.1px;
+  text-align: center;
+  font-size: 44px;
+  line-height: 58px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.feature p, .try p, .client p{
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 1440px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  padding: 0 150px;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.hidden{
+  position: absolute;
+  left : -10000px;
+}
+
+/*헤더*/
+.header{
+  height: 87px;
+}
+/*로그인 회원가입*/
+.login-signup{
+  position: absolute;
+  top: 80px;
+  right: 150px;
+}
+.login-signup li{
+  display: inline-block;
+  font-size: 14px;
+}
+.login-link a, .signup-link a{
+  display: block;
+}
+.login-link a{
+  color: rgba(51, 51, 51, 0.9);
+  margin-right: 20px;
+}
+.signup-link a{
+  width: 125px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #03a67b;
+  border: solid 1px #03a67b;
+  background: #fff;
+  color: #03a67b;
+  box-sizing: border-box;
+  line-height: 38px;
+  text-align: center;
+}
+
+/*로고*/
+.logo{
+  box-sizing: inherit;
+  font-size: 1.5em;
+  float: left;
+}
+/*메인메뉴*/
+.main-menu{
+  margin-left: 100px;
+  font-size: 14px;
+}
+.main-menu li{
+  padding-top: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.main-menu li a{
+  color: rgba(51, 51, 51, 0.9);
+}
+
+/*메인 콘텐츠*/
+.intro-heading{
+  font-size: 52px;
+  color: #333;
+}
+.intro-p{
+  font-size:16px;
+  color: rgba(51, 51, 51, 0.6);
+  line-height: 1.5;
+  width: 540px;
+  text-align: left;
+}
+.textarea{
+  float: left;
+  margin-top: 170px;
+}
+.intro-heading{
+  line-height: 1.5;
+}
+.textarea input, .textarea button{
+  margin-top: 25px;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 50px;
+  vertical-align: top;
+}
+.textarea input{
+  width: 290px;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 24px;
+  border: 0;
+  border-radius: 3px 0 0 3px;
+  background: rgba(51, 51, 51, 0.20);
+}
+.textarea button{
+  color: #fff;
+  width: 200px;
+  border: 0;
+  letter-spacing: 3px;
+  background-color: #03a67b;
+  border-radius: 0 3px 3px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+.phone{
+  float: right;
+  margin-right: 148px;
+  margin-bottom: 85px;
+}
+
+/*feature 영역*/
+.feature{
+  margin-bottom: 190px;
+}
+.feature-heading{
+  width: 195px;
+}
+.feature>p{
+  width: 690px;
+}
+.feature-column{
+  display: flex;
+  justify-content: space-around;
+}
+.feature-column h3{
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3.5px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin-top: 160px;
+  color: #333;
+}
+.feature-column p{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 20px;
+}
+.feature-column1, .feature-column2, .feature-column3{
+  width: 300px;
+  height: 280px;
+  text-align: center;
+  background: url(images/Icon.png) no-repeat 50% 65px;
+}
+
+/*비디오 컨텐츠 영역*/
+.video-content-heading{
+    width: 430px;
+}
+.video-content img{
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 188px;
+}
+
+/*TRY 영역*/
+.try p{
+  width: 550px;
+}
+.try-button{
+  width: 415px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 200px;
+}
+.left-btn, .right-btn{
+  width: 200px;
+  height: 50px;
+  border: 0;
+  letter-spacing: 3px;
+  background-color: #03a67b;
+  border-radius: 4px 4px 4px 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+.right-btn{
+  background: #fff;
+  border: 2px solid #03a67b;
+  color: #03a67b;
+  margin-left: 10px;
+}
+/*클라이언트*/
+.client>p{
+  width: 690px;
+  margin-top: 5px;
+}
+
+.client-column{
+  display: flex;
+  justify-content: space-around;
+}
+.client-column h3{
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3.5px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin-top: 196px;
+  color: #333;
+}
+.client-column span{
+  margin-top: 8px;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.25);
+}
+.client-column p{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 15px;
+}
+.client-column1, .client-column2, .client-column3{
+  width: 300px;
+  height: 330px;
+  text-align: center;
+  background: url(images/usericon.png) no-repeat 50% 65px;
+}
+
+/*푸터 영역*/
+.footer{
+  margin-top: 157px;
+  padding-bottom: 70px;
+  position: relative;
+}
+.footer-heading{
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  color: rgba(51, 51, 51, 0.7);
+  display: inline-block;
+  position: absolute;
+}
+
+.under-menu li{
+  display: inline-block;
+}
+
+.company-menu{
+  font-size: 14px;
+  color: #333;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.sns-menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.company-menu li{
+  margin-left: 10px;
+  color: inherit;
+}
+.company-menu li a{
+  color: inherit;
+}
+.sns-menu li a{
+  display: block;
+  text-indent: 30px;
+  overflow: hidden;
+}
+.facebook-link{
+  width: 8px;
+  height: 16px;
+  background: url(images/Facebook.png) no-repeat;
+}
+.dribble-link{
+  width: 17px;
+  height: 17px;
+  margin-left: 22px;
+  background: url(images/Dribbble.png) no-repeat;
+}
+.google-link{
+  width: 20px;
+  height: 15px;
+  margin-left: 15px;
+  background: url(images/GooglePlus.png) no-repeat;
+}
+.instagram-link{
+  width: 18px;
+  height: 18px;
+  margin-left: 15px;
+  background: url(images/Instagram.png) no-repeat;
+}

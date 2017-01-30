@@ -1,0 +1,345 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Poppins:500,600";
+
+body, h1, h2, h3, p, ul, li, div, dl, dt, dd{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+/*float 이슈 해결*/
+.header::after, .content1::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.header, .footer{
+  padding: 0 150px;
+}
+/*폰트 초기화*/
+.content1-heading, .feature-heading, .blog-heading, .team-heading{
+  font-size: 44px;
+  line-height: 58px;
+  letter-spacing: -1.1px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+p{
+  font-size: 16px;
+  line-height: 24px;
+}
+.wrapper{
+  margin: 0 auto;
+  width: 1440px;
+  font-family: 'Poppins';
+  position: relative;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+.hidden{
+  position: absolute;
+  left : -10000px;
+}
+
+.logo{
+  float: left;
+  line-height: 1;
+}
+.main-menu{
+  margin-top: 5px;
+  float: right;
+}
+.main-menu li{
+  display: inline-block;
+  margin-left: 20px;
+}
+.main-menu li a{
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.9);
+}
+.intro{
+  margin-top: 180px;
+  position: relative;
+  margin-bottom: 270px;
+  margin-left: 150px;
+}
+.intro-heading{
+  font-size: 52px;
+  left: 58px;
+  font-weight: 600;
+  letter-spacing: -1.3px;
+  color: #333;
+}
+.intro-p{
+  width: 500px;
+  color: rgba(51, 51, 51, 0.7);
+}
+.intro button{
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 0;
+  background: #03a67b;
+  font-size:12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-top: 35px;
+  padding: 0;
+  font-family: 'Poppins';
+}
+.intro img{
+  position: absolute;
+  top: 115px;
+  right: 75px;
+}
+/*content1*/
+.content1{
+  padding-bottom: 100px;
+  background: #f5f5f5;
+}
+.content1-text{
+  margin-left: 150px;
+  margin-top: 225px;
+  float: left;
+}
+.content1-p{
+  width: 440px;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.6);
+}
+.content1-video{
+  width: 560px;
+  height: 400px;
+  margin-top: 100px;
+  margin-right: 150px;
+  background: #e8e8e8;
+  float:right;
+  position: relative;
+}
+.content1-video img{
+  left: calc(50% - 52px);
+  top: calc(50% - 52px);
+  position: absolute;
+}
+
+/*content2*/
+.content2{
+  padding: 85px 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.content2 div{
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+.content2 h3{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: 3.5px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.content2-p{
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.5);
+  text-align: center;
+}
+.number{
+  order: -1;
+  font-size: 48px;
+  line-height: 1;
+  color: #03a67b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/*feature*/
+.feature{
+  padding: 100px 150px;
+  background: #f5f5f5;
+}
+.feature-p{
+  width: 700px;
+  color: rgba(51,51,51,0.5);
+  text-align: center;
+  margin: 0 auto;
+}
+.feature-column{
+  display: flex;
+  justify-content: space-around;
+}
+.feature-column h3{
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3.5px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin-top: 160px;
+  color: #333;
+}
+.feature-column p{
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 20px;
+}
+.feature-column1, .feature-column2, .feature-column3{
+  width: 320px;
+  height: 280px;
+  text-align: center;
+  background: url(images/Icon.png) no-repeat 50% 65px;
+}
+/*블로그*/
+.blog{
+  padding: 100px 150px;
+}
+.blog p{
+  text-align: center;
+  color: rgba(51, 51, 51, 0.5);
+}
+.blog-p{
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+}
+.blog-column{
+  display: flex;
+  justify-content: space-around;
+}
+.blog-column article{
+  width: 335px;
+}
+.blog-picture{
+  width: 335px;
+  height: 230px;
+  background: #e8e8e8 url(images/icon-sm.png) no-repeat 50% 50%;
+}
+.blog-column h3{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 220px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  line-height: 18px;
+}
+.blog-column1 p, .blog-column3 p{
+  margin-top: 10px;
+}
+.blog-column2 p{
+  margin-top: 20px;
+}
+
+/*team*/
+.team{
+  padding: 80px 150px;
+  background: #f5f5f5;
+}
+.team-p{
+  width: 700px;
+  margin: 0 auto;
+  color: rgba(51, 51, 51, 0.5);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.team-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team-div{
+  width: 367px;
+  height: 250px;
+  margin-bottom: 20px;
+  background: #e8e8e8;
+}
+.team-div:empty{
+  background: #e8e8e8 url(images/usericon.png) no-repeat 50% 50%;
+}
+.team-div-heading{
+  margin-top: 65px;
+  font-size:14px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  text-align: center;
+  line-height: 16px;
+  color: #333;
+}
+.team-div-p{
+  color: rgba(51,51,51,0.5);
+  text-align: center;
+  width: 265px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/*footer*/
+.footer-column{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.footer-column h2{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 3.5px;
+  color: #333;
+}
+.footer-column p{
+  color: rgba(51, 51, 51, 0.7);
+}
+.footer-column1{
+  width: 320px;
+}
+.footer-column2{
+  width: 320px;
+}
+.footer-column3{
+  width: 380px;
+}
+.footer-column1 p{
+  margin-top: 40px;
+}
+.footer-column3 p{
+  width: 220px;
+  margin-bottom: 10px;
+}
+.footer-column2 p, .footer-column3 p{
+  margin-top: 20px;
+}
+
+.footer-column3 input{
+  width: 312px;
+  height: 42px;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+  background: rgba(51, 51, 51, 0.2);
+  border-radius: 4px 0 0 4px;
+  text-indent: 24px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 0.6);
+}
+.arrow-btn{
+  width: 55px;
+  height: 42px;
+  border: 0;
+  padding: 0;
+  vertical-align: top;
+  border-radius: 0 4px 4px 0;
+  background: #03a67b url(images/ArrowRight.png) no-repeat 50% 50%;
+  margin-bottom: 90px;
+}

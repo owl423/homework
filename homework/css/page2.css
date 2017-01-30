@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Poppins:500,600";
+
+
+body, h1, h2, h3, p, ul, li, div, dl, dt, dd{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+/*float 해결*/
+.header::after, .footer::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+/*공통 폰트설정*/
+.feature-heading, .gallery-heading, .find-your-store-heading{
+  font-family: 'Poppins';
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: -1.1px;
+  text-align: center;
+  color: #333;
+}
+.wrapper{
+  margin: 0 auto;
+  width: 1440px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+.header, .footer{
+  padding: 0 150px;
+}
+/*헤더영역*/
+.header{
+  margin-bottom: 145px;
+}
+.logo{
+  float: left;
+  line-height: 0;
+}
+.language{
+  position: absolute;
+  right: 200px;
+  line-height: 1;
+}
+
+.language li{
+  display: inline-block;
+}
+.language li a{
+  text-decoration: none;
+  font-size: 14px;
+}
+.eng a{
+  color: rgba(3, 166, 123, 0.9);
+}
+.de a{
+  color: rgba(51, 51, 51, 0.9);
+}
+.de::before{
+  content: "/";
+  font-size: 14px;
+  color: rgba(187, 187, 187, 0.9);
+  margin-right: 5px;
+}
+.burger-bar{
+  float:right;
+  line-height: 0;
+}
+/*인트로 영역*/
+.intro-heading{
+  font-size: 52px;
+  line-height: 58px;
+  letter-spacing: -1.3px;
+  text-align: center;
+  color: #333;
+}
+.intro-p{
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  width: 790px;
+  color: rgba(51, 51, 51, 0.6);
+  margin-top: 20px;
+}
+.icon-button{
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-indent: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  border:0;
+  background: url(images/Icon_Button.png) no-repeat;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.picture{
+  display: block;
+  margin: 0 auto;
+}
+.video{
+  height: 460px;
+  background: #03a67b;
+  padding: 135px;
+  box-sizing: border-box;
+}
+.video-play{
+  margin: 0 auto;
+  display: block;
+}
+.video p{
+  width: 540px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*feature 부분*/
+.feature{
+  padding-top: 95px;
+}
+.feature-heading{
+  text-align: center;
+}
+.feature>p{
+ width: 700px;
+ margin: 0 auto;
+ margin-top: 10px;
+ text-align: center;
+ font-size: 16px;
+ line-height: 1.5;
+ color: rgba(51, 51, 51, 0.5);
+}
+.explain{
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+.explain section h3{
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 3px;
+  color: #03a67b;
+  text-align: center;
+}
+.explain section p{
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.5);
+  line-height: 1.57;
+  text-align: center;
+  margin-top: 20px;
+}
+.first-section{
+  width: 260px;
+  position: absolute;
+  top: 110px;
+  left: 140px;
+}
+.second-section{
+  width: 240px;
+  position: absolute;
+  top: 270px;
+  left: 150px;
+}
+.third-section{
+  width: 195px;
+  position: absolute;
+  top: 110px;
+  right: 190px;
+}
+.fourth-section{
+  width: 240px;
+  position: absolute;
+  top: 270px;
+  right: 170px;
+}
+.explain img{
+  display: block;
+  margin: 0 auto;
+}
+/*갤러리 부분*/
+.gallery{
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f5f5f5;
+}
+.gallery-image-list{
+  margin-top: 58px;
+  text-align: center;
+}
+.image{
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  margin: 0 15px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  background: #e8e8e8;
+}
+.gallery button{
+  position: absolute;
+  text-indent: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 78px;
+  height: 78px;
+  border: 0;
+}
+.btn-event-prev{
+  top: 300px;
+  left: 50px;
+  background: url(images/arr-circle-left.png);
+}
+.btn-event-next{
+  top: 300px;
+  right: 50px;
+  background: url(images/arr-circle-right.png);
+}
+/*find your store 부분*/
+.find-your-store{
+  padding-top: 90px;
+  position: relative;
+}
+.find-your-store-heading{
+  margin-bottom: 50px;
+}
+.place-description{
+  width: 365px;
+  height: 165px;
+  text-align: center;
+  background: url(images/Base.png) no-repeat 50% 100%;
+  padding: 0 40px;
+  padding-top: 20px;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 400px;
+  left: 333px;
+}
+.place-description dt{
+  font-size: 16px;
+  line-height: 1.5;
+  color: #03a67b;
+}
+.place-description dd{
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.6);
+}
+.find-your-store img{
+  padding-bottom: 65px;
+  display: block;
+  margin: 0 auto;
+}
+.find-your-store::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ccc;
+}
+/*footer 영역*/
+
+.footer{
+  height: 170px;
+  margin-top: 60px;
+  position: relative;
+}
+.footer-p{
+  position: absolute;
+  width: 320px;
+  top: 45px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.7);
+}
+.under-menu{
+  float: right;
+}
+.company-menu li{
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+.company-menu li a{
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.7);
+}
+.under-menu li{
+  display: inline-block;
+}
+.sns-menu{
+  float:right;
+}
+.sns-menu li a{
+  overflow: hidden;
+  display: block;
+  line-height: 1;
+}
+.slack-link{
+  width: 16px;
+  height: 16px;
+  text-indent: 30px;
+  background: url(images/slack.png);
+}
+.twitter-link{
+  width: 16px;
+  height: 13px;
+  text-indent: 30px;
+  margin-left: 18px;
+  background: url(images/twitter.png);
+}
+.facebook-link{
+  width: 8px;
+  height: 16px;
+  text-indent: 30px;
+  margin-left: 22px;
+  background: url(images/Facebook.png) no-repeat;
+}
+.dribble-link{
+  width: 17px;
+  height: 17px;
+  text-indent: 30px;
+  margin-left: 22px;
+  background: url(images/Dribbble.png) no-repeat;
+}
+.google-link{
+  width: 20px;
+  height: 15px;
+  text-indent: 30px;
+  margin-left: 15px;
+  background: url(images/GooglePlus.png) no-repeat;
+}
+.instagram-link{
+  width: 18px;
+  height: 18px;
+  text-indent: 30px;
+  margin-left: 15px;
+  background: url(images/Instagram.png) no-repeat;
+}
